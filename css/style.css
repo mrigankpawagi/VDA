@@ -1,0 +1,81 @@
+:root{
+    --theme: #ff0063
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    display: block;
+    width: 50%;
+    margin: 25px auto;
+    border: 1px solid var(--theme);
+    background: var(--theme);
+}
+b, b *{
+    font-weight: bold!important;
+}
+.black-text, .black-text *{
+    color: #000!important;
+}
+.red-text, .red-text *{
+    color: #e51c23!important;
+}
+.blue-text, .blue-text *{
+    color: #2196F3!important;
+}
+
+#loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    padding-top: 50px;
+}
+#loader > *{
+    display: block;
+    margin: 25px auto;
+}
+#loader > img {
+    width: 100px;
+}
+nav .brand-logo{
+    height: 100%;
+    padding: 5px;
+}
+nav .brand-logo > img{
+    height: 100%;
+}
+nav i.material-icons{
+    height: 24px;
+    top: 7px;
+    position: relative;
+    line-height: 0;
+    display: inline;
+}
+
+.segment{
+    padding-top: calc(48px + 25px);
+}
+
+.btn i.material-icons{
+    line-height: 0;
+    top: 5px;
+    position: relative;
+}
+
+#ContactUsBtnWrap{
+    right: 31px;
+    bottom: 89px;
+}
+
+.modal-content i{
+    line-height: 0;
+    top: 0.5rem;
+    position: relative;
+}
+
+.contactUs_btns{
+    font-size: 1.3rem;
+}
