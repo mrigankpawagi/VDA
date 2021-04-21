@@ -7,3 +7,8 @@ function unload(time=150, delay=0){
 
 M.AutoInit();
 unload();
+
+
+$(() => {
+    $("li a.active")[0].click();
+});
