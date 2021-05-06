@@ -79,3 +79,21 @@ nav i.material-icons{
 .contactUs_btns{
     font-size: 1.3rem;
 }
+
+#selectCities a.btn-small{
+    background: transparent;
+    border-radius: 20px;
+    margin: 2px;
+    color: #311b92;
+    border: 1px solid #311b92;
+    line-height: 30px;
+}
+
+#selectCities a.btn-small:hover, #selectCities a.btn-small.selected{
+    background-color: #311b92;
+    color: #fff;
+}
+
+a.btn.modal-trigger{
+    line-height: 35px;
+}
