@@ -47,13 +47,20 @@ function logisticalFeasibility(K, t, L, Area_City, Area_Country, Max_Traffic_Spe
     var G = Area_City / Area_Country;
     t = t / Max_Traffic_Speed;
     L = L / 2000; // km per 100 sq km
-    K = K / 10; // Expecting 10 to be a possible maximum
+    K = K / 100; // Expecting 100 to be a possible maximum
 
     return (L/G + K/t) / 2;
 
 }
 
 
-function delayTolerance(){  
-    return;
+function delayTolerance(X, Z, a, b, w, Q, q, A, B, Days_Since_FirstReport, Average_Crowd){
+    X = X / Average_Crowd;
+    Z = Z / Days_Since_FirstReport;
+    a = a / Days_Since_FirstReport;
+    b = b / Days_Since_FirstReport;
+    
+    // TODO: Normalize Q, q and w
+
+    return (Z*a/X/b + w*A/Q/q/B) / 2;
 }
