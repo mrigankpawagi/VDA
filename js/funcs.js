@@ -59,8 +59,9 @@ function delayTolerance(X, Z, a, b, w, Q, q, A, B, Days_Since_FirstReport, Avera
     Z = Z / Days_Since_FirstReport;
     a = a / Days_Since_FirstReport;
     b = b / Days_Since_FirstReport;
-    
-    // TODO: Normalize Q, q and w
+    w = w / 60;
+    Q = Q / 1000000;
+    q = q / 1200;
 
     return (Z*a/X/b + w*A/Q/q/B) / 2;
 }

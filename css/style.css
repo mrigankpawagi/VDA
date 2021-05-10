@@ -1,5 +1,5 @@
 :root{
-    --theme: #ff0063
+    --theme: #311b92;
 }
 *{
     margin: 0;
@@ -96,4 +96,15 @@ nav i.material-icons{
 
 a.btn.line-up{
     line-height: 35px;
+}
+
+#resultsModal{
+    width: 95%;
+    max-height: none;
+    height: 90%;
+    top: 5%!important;
+}
+
+.modal hr{
+    width: 100%;
 }
