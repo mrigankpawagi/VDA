@@ -8,6 +8,17 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin=""></script>
+
 </head>
 
 <body class='blue-grey lighten-4'>
@@ -174,15 +185,21 @@
       <ul class="collapsible popout">
         <li>
           <div class="collapsible-header"><i class="material-icons">warning</i>Vulnerability</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-body">
+            <div id="map1" class="map"></div>
+          </div>
         </li>
         <li>
           <div class="collapsible-header"><i class="material-icons">hourglass_empty</i>Tolerable Delay</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-body">
+            <div id="map2" class="map"></div>
+          </div>
         </li>
         <li>
           <div class="collapsible-header"><i class="material-icons">local_shipping</i>Logistical Feasibility</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-body">
+            <div id="map3" class="map"></div>
+          </div>
         </li>
       </ul>
       <a href="#uploadData" class="btn green waves-effect modal-trigger line-up"><i
@@ -232,6 +249,7 @@
   <div id="lastElem"></div>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
   <script type="text/javascript" src="js/funcs.js"></script>
   <script type="text/javascript" src="js/script.js"></script>

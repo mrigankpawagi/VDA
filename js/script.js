@@ -30,3 +30,5 @@ $("#continue").click(function(){
         }, 1000);
     }
 });
+$("#resultsModal").modal('open');
+
