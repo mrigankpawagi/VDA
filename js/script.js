@@ -26,11 +26,14 @@ $("#continue").click(function(){
         load();
         setTimeout(function(){
             let points = [];
+            $("#legends").html('');
             for(var k = 0; k < selected.length; k++){
                 points.push(markers[selected[k] - 1]);
+                $("#legends").append('<br><span><i class="material-icons" style="color:' + markers[selected[k] - 1].color + '">circle</i> City '+ (+k + 1) +'</span>');
             }
             createMaps(points);
             $("#resultsModal").modal('open');
+            $('#selectCities a.btn-small').removeClass('selected');
             unload();
         }, 1000);
     }

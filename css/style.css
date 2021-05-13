@@ -111,3 +111,8 @@ a.btn.line-up{
 .map{
     height: 400px;
 }
+#legends i{
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
