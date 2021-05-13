@@ -25,10 +25,14 @@ $("#continue").click(function(){
     if(selected.length > 0){
         load();
         setTimeout(function(){
-            unload();
+            let points = [];
+            for(var k = 0; k < selected.length; k++){
+                points.push(markers[selected[k] - 1]);
+            }
+            createMaps(points);
             $("#resultsModal").modal('open');
+            unload();
         }, 1000);
     }
 });
-$("#resultsModal").modal('open');
 
