@@ -8,5 +8,5 @@ function unload(time = 150, delay = 0) {
 M.AutoInit();
 unload();
 setTimeout(function () {
-    $("li.tab a")[0].click();
+    $("li.tab a")[1].click();
 }, 30)

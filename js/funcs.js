@@ -46,8 +46,8 @@ function vulnerability(Vocations, C_Mean, C_Max, H_Median, H_Max, E_Median, E_Ma
 function logisticalFeasibility(K, t, L, Area_City, Area_Country, Max_Traffic_Speed){
     var G = Area_City / Area_Country;
     t = t / Max_Traffic_Speed;
-    L = L / 2000; // km per 100 sq km
-    K = K / 100; // Expecting 100 to be a possible maximum
+    L = L / 2000; 
+    K = K / 100;
 
     return (L/G + K/t) / 2;
 
