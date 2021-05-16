@@ -39,3 +39,6 @@ $("#continue").click(function(){
     }
 });
 
+$("a.pageBtn").click(function(){
+    $("li a[href='" + $(this).attr('href') + "']")[0].click();
+});
